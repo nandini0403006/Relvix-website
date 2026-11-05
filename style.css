@@ -1,0 +1,333 @@
+html {
+    scroll-padding-top: 100px;
+    scroll-behavior: smooth;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Segoe UI', 'Arial', sans-serif;
+    background: linear-gradient(180deg, #020b1a 0%, #041e3d 50% , #0a2f4f 100%);
+    color: #caf0f8;
+    line-height: 1.6;
+    overflow-x: hidden;
+    padding-top: 90px;
+}
+header {
+    background: #020b1a;
+    padding: 15px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 100;
+    border-bottom:1px solid rgba(0, 180, 216, 0.15);
+}
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+.logo-icon {
+    width: 50px;
+    height: 50px;
+    background: linear-gradient(135deg, #00b4d8, #48cae4, #90e0ef);
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 20px rgba(0, 180, 216, 0.4);
+}
+.logo-text h1 {
+    font-size: 22px;
+    color: #48cae4;
+    letter-spacing: 1px;
+}
+.logo-text p {
+    font-size: 13px;
+    color:#90e0ef;
+    letter-spacing: 0.5px;
+    opacity: 0.8;
+}
+nav ul li a {
+    color: #caf0f8;
+    text-decoration: none;
+    font-size: 14px;
+}
+.hero {
+    min-height: 25vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+}
+.section-title {
+    font-size: 32px;
+    color: #caf0f8;
+    letter-spacing: 1.5px;
+    margin-bottom: 5px;
+}
+.container {
+    max-width: 1340px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+.games-grid {
+    display: grid; 
+    grid-template-columns: repeat(auto-fit, minmax(280px,1fr));
+    gap: 20px;
+}
+.game-card{
+    background: rgba(10, 47, 79, 0.5);
+    border-radius: 15px;
+    padding: 20px;
+    border:1px solid rgba(0, 180, 216, 0.2);
+}
+.game-card h3 {
+    color: #caf0f8;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.game-card span {
+    display: inline-block;
+    background: rgba(0, 180, 216, 0.2);
+    color: #90e0ef;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 13px;
+    margin-top: 10px;
+}
+.universe-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap:20px;
+}
+.universe-card {
+    background: rgba(10, 47, 79, 0.5);
+    border-radius: 15px;
+    padding:30px;
+    border: 1px solid rgba(0, 180, 216, 0.2);
+}
+.universe-card h3 {
+    color: #caf0f8;
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+.universe-card span{
+    display: inline-block;
+    background: rgba(0, 180, 216, 0.2);
+    color: #90e0ef;
+    padding: 5px 15px;
+    border-radius: 15px;
+    font-size: 13px;
+    margin-top: 5px;
+}
+.about-content {
+    background: rgba(10, 47, 79, 0.5);
+    border-radius: 15px;
+    padding: 30px;
+    border: 1px solid rgba(0, 180, 216, 0.2);
+    margin-bottom: 20px;
+}
+.about-text h3 {
+    color: #48cae4;
+    font-size: 22px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 20px;
+}
+.skill {
+    background: rgba(0, 180, 216, 0.2);
+    color: #90e0ef;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 13px; 
+}
+.devlog-post {
+    background: rgba(10, 47, 79, 0.5);
+    border-radius: 15px;
+    padding:25px;
+    margin-bottom: 20px;
+    border-left: 4px solid #48cae4;
+    border-top: 1px solid rgba(0, 180, 216, 0.1);
+    border-right: 1px solid rgba(0, 180, 216, 0.1);
+    border-bottom: 1px solid rgba(0, 180, 216, 0.1);
+}
+.devlog-post h3 {
+    color: #caf0f8;
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+.devlog-post .date {
+    font-size: 12px;
+    color: #90e0ef;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.devlog-post p {
+    color: #caf0f8;
+    opacity: 0.9;
+}
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin: 30px 0;
+    flex-wrap: wrap;
+}
+.social-links a {
+    color: #caf0f8;
+    text-decoration: none;
+    background: rgba(10, 47, 79, 0.5);
+    padding: 10px 20px;
+    border-radius: 25px;
+    border: 1px solid rgba(0, 180, 216, 0.2);
+    font-size: 14px;
+}
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    background: rgba(10, 47, 79, 0.5);
+    padding: 30px;
+    border-radius: 15px;
+    border: 1px solid rgba(0, 180, 216, 0.2);
+}
+.contact-form h3 {
+    color: #48cae4;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.form-group {
+    margin-bottom: 15px;
+}
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #90e0ef;
+    font-size: 14px;
+}
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 12px;
+    background: rgba(2, 11, 26, 0.8);
+    border: 1px solid rgba(0, 180, 216, 0.3);
+    border-radius: 8px;
+    color: #caf0f8;
+    font-family: inherit;
+}
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #00b4d8;
+}
+.form-group textarea {
+    height: 120px;
+    resize: vertical;
+}
+.submit-btn {
+    width: 100px;
+    background: #00b4d8;
+    color: #020b1a;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+}
+footer {
+    background: #020b1a;
+    text-align: center;
+    padding: 20px;
+    border-top: 1px solid rgba(0, 180, 216, 0.15);
+    margin-top: 40px;
+}
+footer p {
+    color: #90e0ef;
+    font-size: 13px;
+    opacity:0.7;
+}
+@media (max-width: 768px) {
+    /* 1. stack the logo and navigation on top of each other */
+    header .container {
+        flex-direction: column;
+        gap: 15px;
+    }
+    /* 2. wrap the nav links if they get too long */
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+    /*  3. add mpre top padding because the header is taller on mobile */
+    body {
+        padding-top: 140px;
+    }
+    /* 4. force all grids to be 1 column on phones */
+    .games-grid,
+    .universe-grid {
+        grid-template-columns: 1fr;
+    }
+    /* 5. make the big welcome text a bit smaller */
+    .hero h1 {
+        font-size: 28px;
+    }
+}
+.poem-card {
+    background: rgba(10, 47, 79, 0.5);
+    border-radius: 15px;
+    padding: 30px;
+    margin-bottom: 25px;
+    border-left: 4px solid #48cae4;
+    border-top: 1px solid rgba(0, 180, 216, 0.1);
+    border-right: 1px solid rgba(0, 180, 216, 0.1);
+    border-bottom: 1px solid rgba(0, 180, 216, 0.1);
+}
+
+.poem-card h3 {
+    color: #48cae4;
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+.poem-card p {
+    color: #caf0f8;
+    font-size: 16px;
+    line-height: 1.8; /* Extra space for poetry reading */
+    font-style: italic; /* Poetry looks great in italics */
+}
+.btn {
+    display: inline-block;
+    background: #00b4d8;
+    color: #020b1a;
+    padding: 10px 25px;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: bold;
+    margin-top: 10px;
+    border: 2px solid #00b4d8;
+}
+
+.btn-outline {
+    background: transparent;
+    color: #00b4d8;
+}
